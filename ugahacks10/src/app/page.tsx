@@ -1,10 +1,10 @@
 "use client";
 
-"use client";
-
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import "./globals.css";
+//import cloud from "C:/Nandu/UGA HACKS/UGAHACKS10/ugahacks10/public/cloudpng.png";
 
 export default function Home() {
   const [cloudPosition, setCloudPosition] = useState(-20);
@@ -17,8 +17,11 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#BDE0FE] from-50% to-[#DDE5B6] text-[#6C584C] font-sans overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#BDE0FE] from-50% to-[#DDE5B6] text-[#6C584C] font-sans overflow-hidden z-10">
       
+      
+      
+
 
       {/* Header */}
       <header className="w-full flex justify-between p-6 bg-[#ADC178] shadow-md">
@@ -28,6 +31,13 @@ export default function Home() {
           <Link href="/login" className="px-4 py-2 bg-[#6C584C] text-white rounded-lg shadow-md hover:bg-[#A98467] transition">Login</Link>
         </div>
       </header>
+
+        <div className="clouds">
+        <div className="cloud cloud-1" style={{ top: "10%" }}></div>
+        <div className="cloud cloud-2" style={{ top: "30%" }}></div>
+        <div className="cloud cloud-3" style={{ top: "50%" }}></div>
+        <div className="cloud cloud-4" style={{ top: "70%" }}></div>
+      </div>
 
       {/* Main Content */}
       <main className="flex flex-col items-center gap-6 p-10 text-center max-w-2xl">

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -18,4 +20,76 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+}
+
+
+/* Different animation speeds for each cloud */
+.cloud-1 {
+  position: absolute;
+  top: 20%; /* Adjust this to control the vertical position of the clouds */
+  background: url('/cloudpng.png') no-repeat center center;
+  background-size: contain;
+  width: 100px;
+  height: 120px;
+  z-index: -1;
+  animation: cloudAnimation1 60s linear infinite; /* Fastest cloud */
+}
+
+.cloud-2 {
+  position: absolute;
+  top: 20%; /* Adjust this to control the vertical position of the clouds */
+  background: url('/cloudpng.png') no-repeat center center;
+  background-size: contain;
+  width: 200px;
+  height: 120px;
+  z-index: -1;
+  animation: cloudAnimation2 100s linear infinite; /* Slower cloud */
+}
+
+.cloud-3 {
+  position: absolute;
+  top: 20%; /* Adjust this to control the vertical position of the clouds */
+  background: url('/cloudpng.png') no-repeat center center;
+  background-size: contain;
+  width: 200px;
+  height: 120px;
+  z-index: -1;
+  animation: cloudAnimation1 130s linear infinite; /* Slowest cloud */
+}
+
+.cloud-4 {
+  position: absolute;
+  top: 20%; /* Adjust this to control the vertical position of the clouds */
+  background: url('/cloudpng.png') no-repeat center center;
+  background-size: contain;
+  width: 200px;
+  height: 120px;
+  z-index: -1;
+  animation: cloudAnimation2 85s linear infinite; /* Slowest cloud */
+}
+
+/* Cloud animation */
+@keyframes cloudAnimation1 {
+  0% {
+    transform: translateX(-90vw); /* Start off the screen */
+  }
+  50% {
+    transform: translateX(90vw); /* Moves clouds from left to right across the screen */
+  }
+  100% {
+    transform: translateX(-90vw); /* Move the clouds back to the left after reaching the end */
+  }
+}
+
+@keyframes cloudAnimation2 {
+  0% {
+    transform: translateX(90vw); /* Start off the screen */
+  }
+  50% {
+    transform: translateX(-90vw); /* Moves clouds from left to right across the screen */
+  }
+  100% {
+    transform: translateX(90vw); /* Move the clouds back to the left after reaching the end */
+  }
 }

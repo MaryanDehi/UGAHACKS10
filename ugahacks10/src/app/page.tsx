@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#DDE5B6] to-[#F0EAD2] text-[#6C584C] font-sans overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#BDE0FE] from-50% to-[#DDE5B6] text-[#6C584C] font-sans overflow-hidden">
       
 
       {/* Header */}

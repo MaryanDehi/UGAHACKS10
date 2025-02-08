@@ -52,9 +52,7 @@ export default function Home() {
         <div className="treeImageLeft">
           <img src={tree.src} alt="tree" />
         </div>
-        <div className="treeImageRight">
-          <img src={tree.src} alt="tree" />
-        </div>
+        
         
           
       </main>

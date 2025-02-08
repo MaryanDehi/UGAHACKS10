@@ -106,12 +106,4 @@ body {
 }
 
 
-treeImageRight {
-  position: relative;
-  right: -85px;
-  bottom: -148px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.8; 
-}
+

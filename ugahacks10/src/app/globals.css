@@ -93,7 +93,7 @@ body {
     transform: translateX(90vw); /* Move the clouds back to the left after reaching the end */
   }
 }
-}
+
 
 .treeImageLeft {
   position: absolute;
@@ -104,6 +104,17 @@ body {
   object-fit: cover;
   opacity: 0.8; 
 }
+
+.rightTree {
+  position: absolute;
+  right: -1272px;
+  bottom: -480px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8; 
+}
+
 
 
 

@@ -52,9 +52,9 @@ export default function Home() {
         <div className="treeImageLeft">
           <img src={tree.src} alt="tree" />
         </div>
-        <div className="rightTree">
+        {/* <div className="rightTree">
           <img src={tree.src} alt="tree" />
-        </div>
+        </div> */}
         
         
           

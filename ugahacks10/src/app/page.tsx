@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import "./globals.css";
 //import cloud from "C:/Nandu/UGA HACKS/UGAHACKS10/ugahacks10/public/cloudpng.png";
+import tree from "../../public/tree.png";
 
 export default function Home() {
   const [cloudPosition, setCloudPosition] = useState(-20);
@@ -48,6 +49,14 @@ export default function Home() {
         <button className="px-6 py-3 bg-[#ADC178] text-[#6C584C] rounded-lg shadow-md hover:bg-[#A98467] hover:text-white transition">
           Get Started
         </button>
+        <div className="treeImageLeft">
+          <img src={tree.src} alt="tree" />
+        </div>
+        <div className="treeImageRight">
+          <img src={tree.src} alt="tree" />
+        </div>
+        
+          
       </main>
 
       {/* Footer */}
